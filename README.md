@@ -27,7 +27,7 @@ The layout script uses input port values and bit masks defined as variables and 
 saves/mame/artwork/
 
 2. **Select the View:**  
-In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView`.
+In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
 
 3. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
