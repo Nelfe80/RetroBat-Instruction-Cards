@@ -14,4 +14,4 @@ Visual Rendering > Disable Artwork > No
 
 -->
 
-In Mame RetroBat, configure COIN3 to change left image and COIN4 to change right image
+In Mame RetroBat, to change instruction card, press and hold start, then use the up and down buttons to select which instruction card to display.
