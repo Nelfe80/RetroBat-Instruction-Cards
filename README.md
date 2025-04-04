@@ -2,6 +2,8 @@
 
 This project provides a customizable MAME layout that displays interactive instruction cards on the left and right sides of the screen. The layout is designed for use with multiple games and lets you switch instruction cards by holding the Start button and pressing Up or Down.
 
+<img src="https://github.com/Nelfe80/RetroBat-Instruction-Cards/blob/master/_img/sf2ce.png"/>
+
 ## Overview
 
 The layout shows two sets of instruction cards:
