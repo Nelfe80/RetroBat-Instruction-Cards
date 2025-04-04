@@ -36,16 +36,16 @@ In RetroBat, launch MAME (typically Mame64) and select the view named `Instructi
 ## Usage
 
 - **Player 1 (Left Side):**  
-- **Start Button:**
-- **Up:** 
-- **Down:** 
+- **Start Button:Hold the Start button**
+- **Up:Next card**
+- **Down:Prev card**
 
 When Player 1 holds Start and presses Up or Down, the left instruction card cycles to the next or previous image.
 
 - **Player 2 (Right Side):**  
-- **Start Button:** 
-- **Up:** 
-- **Down:** 
+- **Start Button:Hold the Start button* 
+- **Up:Next card**
+- **Down:Prev card**
 
 When Player 2 holds Start and presses Up or Down, the right instruction card cycles accordingly.
 
