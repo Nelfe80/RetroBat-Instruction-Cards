@@ -5,6 +5,9 @@ Config system :
 EMULATOR > MAME64
 Visual Rendering > Disable Artwork > No
 
+NB:
+AVSP : add qsound_hle.zip in your folder mame rom (MAME64 needs this file with avsp)
+
 <!--
 
 - Artwork type: Instructions Cards

@@ -1,0 +1,150 @@
+﻿<mamelayout version="2">
+
+  <element name="inst_left" defstate="0">
+    <image file="Instruction Card - Bonus Points 01 - leftCenter.png" state="0"/>
+    <image file="Instruction Card - Bonus Points 02 - leftCenter.png" state="1"/>
+    <image file="Instruction Card - Items And Weaponry 01 - leftCenter.png" state="2"/>
+    <image file="Instruction Card - Items And Weaponry 02 - leftCenter.png" state="3"/>
+    <image file="Instruction Card - Items And Weaponry 03 - leftCenter.png" state="4"/>
+    <image file="Instruction Card - Lt Linn Kurosawa 01 - leftCenter.png" state="5"/>
+    <image file="Instruction Card - Lt Linn Kurosawa 02 - leftCenter.png" state="6"/>
+    <image file="Instruction Card - Lt Linn Kurosawa 03 - leftCenter.png" state="7"/>
+    <image file="Instruction Card - Maj D Schaefer 01 - leftCenter.png" state="8"/>
+    <image file="Instruction Card - Maj D Schaefer 02 - leftCenter.png" state="9"/>
+    <image file="Instruction Card - Predator Hunter 01 - leftCenter.png" state="10"/>
+    <image file="Instruction Card - Predator Hunter 02 - leftCenter.png" state="11"/>
+    <image file="Instruction Card - Predator Hunter 03 - leftCenter.png" state="12"/>
+    <image file="Instruction Card - Predator Hunter 04 - leftCenter.png" state="13"/>
+    <image file="Instruction Card - Predator Warrior 01 - leftCenter.png" state="14"/>
+    <image file="Instruction Card - Predator Warrior 02 - leftCenter.png" state="15"/>
+    <image file="Instruction Card - Predator Warrior 03 - leftCenter.png" state="16"/>
+    <image file="Instruction Card - Vitality 01 - leftCenter.png" state="17"/>
+    <image file="Instruction Card - Vitality 02 - leftCenter.png" state="18"/>
+  </element>
+
+  <element name="inst_right" defstate="0">
+    <image file="Instruction Card - Bonus Points 01 - rightCenter.png" state="0"/>
+    <image file="Instruction Card - Bonus Points 02 - rightCenter.png" state="1"/>
+    <image file="Instruction Card - Items And Weaponry 01 - rightCenter.png" state="2"/>
+    <image file="Instruction Card - Items And Weaponry 02 - rightCenter.png" state="3"/>
+    <image file="Instruction Card - Items And Weaponry 03 - rightCenter.png" state="4"/>
+    <image file="Instruction Card - Lt Linn Kurosawa 01 - rightCenter.png" state="5"/>
+    <image file="Instruction Card - Lt Linn Kurosawa 02 - rightCenter.png" state="6"/>
+    <image file="Instruction Card - Lt Linn Kurosawa 03 - rightCenter.png" state="7"/>
+    <image file="Instruction Card - Maj D Schaefer 01 - rightCenter.png" state="8"/>
+    <image file="Instruction Card - Maj D Schaefer 02 - rightCenter.png" state="9"/>
+    <image file="Instruction Card - Predator Hunter 01 - rightCenter.png" state="10"/>
+    <image file="Instruction Card - Predator Hunter 02 - rightCenter.png" state="11"/>
+    <image file="Instruction Card - Predator Hunter 03 - rightCenter.png" state="12"/>
+    <image file="Instruction Card - Predator Hunter 04 - rightCenter.png" state="13"/>
+    <image file="Instruction Card - Predator Warrior 01 - rightCenter.png" state="14"/>
+    <image file="Instruction Card - Predator Warrior 02 - rightCenter.png" state="15"/>
+    <image file="Instruction Card - Predator Warrior 03 - rightCenter.png" state="16"/>
+    <image file="Instruction Card - Vitality 01 - rightCenter.png" state="17"/>
+    <image file="Instruction Card - Vitality 02 - rightCenter.png" state="18"/>
+  </element>
+
+  <view name="InstructionsCardsView">
+    <screen index="0">
+      <bounds x="510" y="347" width="2990" height="2330"/>
+    </screen>
+    <element id="inst_left" ref="inst_left">
+      <bounds x="0" y="347" width="510" height="2330"/>
+    </element>
+    <element id="inst_right" ref="inst_right">
+      <bounds x="3500" y="347" width="510" height="2330"/>
+    </element>
+  </view>
+
+  <script><![CDATA[
+  local stateLeft = 0
+  local stateRight = 0
+  local numStates = 19
+
+-- Variables pour les entrées du joueur 1 (gauche)
+local player1_start_IOPORT = "IN2"
+local player1_start_BITPORT = 0x0100
+local player1_keyup_IOPORT = "IN0"
+local player1_keyup_BITPORT = 0x0008
+local player1_keydown_IOPORT = "IN0"
+local player1_keydown_BITPORT= 0x0004
+
+-- Variables pour les entrées du joueur 2 (droite)
+local player2_start_IOPORT = "IN2"
+local player2_start_BITPORT = 0x0200
+local player2_keyup_IOPORT = "IN0"
+local player2_keyup_BITPORT = 0x0800
+local player2_keydown_IOPORT = "IN0"
+local player2_keydown_BITPORT= 0x0400
+
+  -- Variables pour l'edge detection
+  local prevKeyUp1 = true
+  local prevKeyDown1 = true
+  local prevKeyUp2 = true
+  local prevKeyDown2 = true
+
+  file:set_resolve_tags_callback(function ()
+    -- Obtenir les ports pour les entrées du joueur 1
+    local p1_start_port = file.device:ioport(player1_start_IOPORT)
+    local p1_key_port   = file.device:ioport(player1_keyup_IOPORT)
+    -- Pour le joueur 2, on utilise le même port IN0 et IN1, mais avec des bits différents
+    local p2_start_port = file.device:ioport(player2_start_IOPORT)
+    local p2_key_port   = file.device:ioport(player2_keyup_IOPORT)
+
+    file.views["InstructionsCardsView"]:set_prepare_items_callback(function ()
+      local leftCard  = file.views["InstructionsCardsView"].items["inst_left"]
+      local rightCard = file.views["InstructionsCardsView"].items["inst_right"]
+
+      local p1_start_val = p1_start_port:read()
+      local p1_key_val   = p1_key_port:read()
+      local p2_start_val = p2_start_port:read()
+      local p2_key_val   = p2_key_port:read()
+
+      -- Pour le joueur 1 (gauche)
+      local p1_start = ((p1_start_val & player1_start_BITPORT) == 0)
+      if p1_start then
+        local p1_up   = ((p1_key_val & player1_keyup_BITPORT) == 0)
+        if p1_up and not prevKeyUp1 then
+          stateLeft = (stateLeft + 1) % numStates
+          leftCard:set_state(stateLeft)
+          print("Player1: Start+Up -> new state: " .. stateLeft)
+        end
+        local p1_down = ((p1_key_val & player1_keydown_BITPORT) == 0)
+        if p1_down and not prevKeyDown1 then
+          stateLeft = (stateLeft - 1 + numStates) % numStates
+          leftCard:set_state(stateLeft)
+          print("Player1: Start+Down -> new state: " .. stateLeft)
+        end
+        prevKeyUp1 = p1_up
+        prevKeyDown1 = p1_down
+      else
+        prevKeyUp1 = true
+        prevKeyDown1 = true
+      end
+
+      -- Pour le joueur 2 (droite)
+      local p2_start = ((p2_start_val & player2_start_BITPORT) == 0)
+      if p2_start then
+        local p2_up   = ((p2_key_val & player2_keyup_BITPORT) == 0)
+        if p2_up and not prevKeyUp2 then
+          stateRight = (stateRight + 1) % numStates
+          rightCard:set_state(stateRight)
+          print("Player2: Start+Up -> new state: " .. stateRight)
+        end
+        local p2_down = ((p2_key_val & player2_keydown_BITPORT) == 0)
+        if p2_down and not prevKeyDown2 then
+          stateRight = (stateRight - 1 + numStates) % numStates
+          rightCard:set_state(stateRight)
+          print("Player2: Start+Down -> new state: " .. stateRight)
+        end
+        prevKeyUp2 = p2_up
+        prevKeyDown2 = p2_down
+      else
+        prevKeyUp2 = true
+        prevKeyDown2 = true
+      end
+    end)
+  end)
+]]></script>
+
+</mamelayout>
