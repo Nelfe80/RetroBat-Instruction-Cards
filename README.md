@@ -46,7 +46,7 @@ Check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignemen
 When Player 1 holds Start and presses Up or Down, the left instruction card cycles to the next or previous image.
 
 - **Player 2 (Right Side):**  
-- **Start Button:Hold the Start button* *
+- **Start Button:Hold the Start button**
 - **Up:Next card**
 - **Down:Prev card**
 
