@@ -34,7 +34,7 @@ saves/mame/artwork/
 In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
 
 4. **Check Inputs:**  
-Check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start)
+Check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start and Up and Down buttons)
 
 ## Usage
 
