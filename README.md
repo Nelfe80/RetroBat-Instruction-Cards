@@ -26,12 +26,15 @@ The layout script uses input port values and bit masks defined as variables and 
    Place the entire folder containing the layout and its images into the following directory in RetroBat:  
 saves/mame/artwork/
 
-2. **Select the View:**  
-In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
-
-3. **Configure RetroBat:**  
+2. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
 - In the advanced options for the system or game, under **Visual Rendering**, set **Disable Artwork** to **No**.
+
+3. **Select the View:**  
+In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
+
+4. **Check Inputs:**  
+Check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start)
 
 ## Usage
 
@@ -43,7 +46,7 @@ In RetroBat, launch MAME (typically Mame64) and select the view named `Instructi
 When Player 1 holds Start and presses Up or Down, the left instruction card cycles to the next or previous image.
 
 - **Player 2 (Right Side):**  
-- **Start Button:Hold the Start button* 
+- **Start Button:Hold the Start button* *
 - **Up:Next card**
 - **Down:Prev card**
 
