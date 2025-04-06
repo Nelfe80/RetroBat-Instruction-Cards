@@ -1,4 +1,4 @@
-# Instruction Cards Layout for RetroBat
+# Instruction Cards Layout for Mame & RetroBat
 
 This project provides a customizable MAME layout that displays interactive instruction cards on the left and right sides of the screen. The layout is designed for use with multiple games and lets you switch instruction cards by holding the Start button and pressing Up or Down.
 
