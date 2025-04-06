@@ -52,4 +52,10 @@ When Player 1 holds Start and presses Up or Down, the left instruction card cycl
 
 When Player 2 holds Start and presses Up or Down, the right instruction card cycles accordingly.
 
+RetroBat-Instruction-Cards is a Mame-integrated solution that uses only Mame's Layout plugin and exploits the inputs of the various emulated systems to access the Start, Up and Down keys. 
+This solution does not depend on external development or enhanced software. It can therefore be easily used in all systems running Mame.
+
+Instructions cards from Marlon Lopez :
+https://www.mmg1designs.com/instruction-cards-for-hyperlaunch-with-moves-list-for-various-street-fighter-games/
+Thanks !
 
