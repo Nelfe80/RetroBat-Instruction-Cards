@@ -1,0 +1,204 @@
+﻿<mamelayout version="2">
+
+  <element name="inst_left" defstate="0">
+    <image file="Instruction Card - Basara Kubikiri 01 - leftCenter.png" state="0"/>
+    <image file="Instruction Card - Basara Kubikiri 02 - leftCenter.png" state="1"/>
+    <image file="Instruction Card - Basara Kubikiri 03 - leftCenter.png" state="2"/>
+    <image file="Instruction Card - Basara Kubikiri 04 - leftCenter.png" state="3"/>
+    <image file="Instruction Card - Gaira Kafuin 01 - leftCenter.png" state="4"/>
+    <image file="Instruction Card - Gaira Kafuin 02 - leftCenter.png" state="5"/>
+    <image file="Instruction Card - Gaira Kafuin 03 - leftCenter.png" state="6"/>
+    <image file="Instruction Card - Galford D Weller 01 - leftCenter.png" state="7"/>
+    <image file="Instruction Card - Galford D Weller 02 - leftCenter.png" state="8"/>
+    <image file="Instruction Card - Galford D Weller 03 - leftCenter.png" state="9"/>
+    <image file="Instruction Card - Galford D Weller 04 - leftCenter.png" state="10"/>
+    <image file="Instruction Card - Genjuro Kibagami 01 - leftCenter.png" state="11"/>
+    <image file="Instruction Card - Genjuro Kibagami 02 - leftCenter.png" state="12"/>
+    <image file="Instruction Card - Genjuro Kibagami 03 - leftCenter.png" state="13"/>
+    <image file="Instruction Card - Hanzo Hattori 01 - leftCenter.png" state="14"/>
+    <image file="Instruction Card - Hanzo Hattori 02 - leftCenter.png" state="15"/>
+    <image file="Instruction Card - Hanzo Hattori 03 - leftCenter.png" state="16"/>
+    <image file="Instruction Card - Hanzo Hattori 04 - leftCenter.png" state="17"/>
+    <image file="Instruction Card - Haohmaru 01 - leftCenter.png" state="18"/>
+    <image file="Instruction Card - Haohmaru 02 - leftCenter.png" state="19"/>
+    <image file="Instruction Card - Haohmaru 03 - leftCenter.png" state="20"/>
+    <image file="Instruction Card - Haohmaru 04 - leftCenter.png" state="21"/>
+    <image file="Instruction Card - Kyoshiro Senryo 01 - leftCenter.png" state="22"/>
+    <image file="Instruction Card - Kyoshiro Senryo 02 - leftCenter.png" state="23"/>
+    <image file="Instruction Card - Kyoshiro Senryo 03 - leftCenter.png" state="24"/>
+    <image file="Instruction Card - Nakoruru 01 - leftCenter.png" state="25"/>
+    <image file="Instruction Card - Nakoruru 02 - leftCenter.png" state="26"/>
+    <image file="Instruction Card - Nakoruru 03 - leftCenter.png" state="27"/>
+    <image file="Instruction Card - Nakoruru 04 - leftCenter.png" state="28"/>
+    <image file="Instruction Card - Nakoruru 05 - leftCenter.png" state="29"/>
+    <image file="Instruction Card - Nakoruru 06 - leftCenter.png" state="30"/>
+    <image file="Instruction Card - Rimururu 01 - leftCenter.png" state="31"/>
+    <image file="Instruction Card - Rimururu 02 - leftCenter.png" state="32"/>
+    <image file="Instruction Card - Rimururu 03 - leftCenter.png" state="33"/>
+    <image file="Instruction Card - Rimururu 04 - leftCenter.png" state="34"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 01 - leftCenter.png" state="35"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 02 - leftCenter.png" state="36"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 03 - leftCenter.png" state="37"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 04 - leftCenter.png" state="38"/>
+    <image file="Instruction Card - Shizumaru Hisame 01 - leftCenter.png" state="39"/>
+    <image file="Instruction Card - Shizumaru Hisame 02 - leftCenter.png" state="40"/>
+    <image file="Instruction Card - Ukyo Tachibana 01 - leftCenter.png" state="41"/>
+    <image file="Instruction Card - Ukyo Tachibana 02 - leftCenter.png" state="42"/>
+    <image file="Instruction Card - Zankuro Minazuki 01 - leftCenter.png" state="43"/>
+    <image file="Instruction Card - Zankuro Minazuki 02 - leftCenter.png" state="44"/>
+    <image file="Instruction Card - Zankuro Minazuki 03 - leftCenter.png" state="45"/>
+  </element>
+
+  <element name="inst_right" defstate="0">
+    <image file="Instruction Card - Basara Kubikiri 01 - rightCenter.png" state="0"/>
+    <image file="Instruction Card - Basara Kubikiri 02 - rightCenter.png" state="1"/>
+    <image file="Instruction Card - Basara Kubikiri 03 - rightCenter.png" state="2"/>
+    <image file="Instruction Card - Basara Kubikiri 04 - rightCenter.png" state="3"/>
+    <image file="Instruction Card - Gaira Kafuin 01 - rightCenter.png" state="4"/>
+    <image file="Instruction Card - Gaira Kafuin 02 - rightCenter.png" state="5"/>
+    <image file="Instruction Card - Gaira Kafuin 03 - rightCenter.png" state="6"/>
+    <image file="Instruction Card - Galford D Weller 01 - rightCenter.png" state="7"/>
+    <image file="Instruction Card - Galford D Weller 02 - rightCenter.png" state="8"/>
+    <image file="Instruction Card - Galford D Weller 03 - rightCenter.png" state="9"/>
+    <image file="Instruction Card - Galford D Weller 04 - rightCenter.png" state="10"/>
+    <image file="Instruction Card - Genjuro Kibagami 01 - rightCenter.png" state="11"/>
+    <image file="Instruction Card - Genjuro Kibagami 02 - rightCenter.png" state="12"/>
+    <image file="Instruction Card - Genjuro Kibagami 03 - rightCenter.png" state="13"/>
+    <image file="Instruction Card - Hanzo Hattori 01 - rightCenter.png" state="14"/>
+    <image file="Instruction Card - Hanzo Hattori 02 - rightCenter.png" state="15"/>
+    <image file="Instruction Card - Hanzo Hattori 03 - rightCenter.png" state="16"/>
+    <image file="Instruction Card - Hanzo Hattori 04 - rightCenter.png" state="17"/>
+    <image file="Instruction Card - Haohmaru 01 - rightCenter.png" state="18"/>
+    <image file="Instruction Card - Haohmaru 02 - rightCenter.png" state="19"/>
+    <image file="Instruction Card - Haohmaru 03 - rightCenter.png" state="20"/>
+    <image file="Instruction Card - Haohmaru 04 - rightCenter.png" state="21"/>
+    <image file="Instruction Card - Kyoshiro Senryo 01 - rightCenter.png" state="22"/>
+    <image file="Instruction Card - Kyoshiro Senryo 02 - rightCenter.png" state="23"/>
+    <image file="Instruction Card - Kyoshiro Senryo 03 - rightCenter.png" state="24"/>
+    <image file="Instruction Card - Nakoruru 01 - rightCenter.png" state="25"/>
+    <image file="Instruction Card - Nakoruru 02 - rightCenter.png" state="26"/>
+    <image file="Instruction Card - Nakoruru 03 - rightCenter.png" state="27"/>
+    <image file="Instruction Card - Nakoruru 04 - rightCenter.png" state="28"/>
+    <image file="Instruction Card - Nakoruru 05 - rightCenter.png" state="29"/>
+    <image file="Instruction Card - Nakoruru 06 - rightCenter.png" state="30"/>
+    <image file="Instruction Card - Rimururu 01 - rightCenter.png" state="31"/>
+    <image file="Instruction Card - Rimururu 02 - rightCenter.png" state="32"/>
+    <image file="Instruction Card - Rimururu 03 - rightCenter.png" state="33"/>
+    <image file="Instruction Card - Rimururu 04 - rightCenter.png" state="34"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 01 - rightCenter.png" state="35"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 02 - rightCenter.png" state="36"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 03 - rightCenter.png" state="37"/>
+    <image file="Instruction Card - Shiro Tokisada Amakusa 04 - rightCenter.png" state="38"/>
+    <image file="Instruction Card - Shizumaru Hisame 01 - rightCenter.png" state="39"/>
+    <image file="Instruction Card - Shizumaru Hisame 02 - rightCenter.png" state="40"/>
+    <image file="Instruction Card - Ukyo Tachibana 01 - rightCenter.png" state="41"/>
+    <image file="Instruction Card - Ukyo Tachibana 02 - rightCenter.png" state="42"/>
+    <image file="Instruction Card - Zankuro Minazuki 01 - rightCenter.png" state="43"/>
+    <image file="Instruction Card - Zankuro Minazuki 02 - rightCenter.png" state="44"/>
+    <image file="Instruction Card - Zankuro Minazuki 03 - rightCenter.png" state="45"/>
+  </element>
+
+  <view name="InstructionsCardsView">
+    <screen index="0">
+      <bounds x="510" y="347" width="2990" height="2330"/>
+    </screen>
+    <element id="inst_left" ref="inst_left">
+      <bounds x="0" y="347" width="510" height="2330"/>
+    </element>
+    <element id="inst_right" ref="inst_right">
+      <bounds x="3500" y="347" width="510" height="2330"/>
+    </element>
+  </view>
+
+<script><![CDATA[
+  local stateLeft = 0
+  local stateRight = 0
+  local numStates = 46
+
+-- Variables pour les entrées du joueur 1 (gauche)
+local player1_start_IOPORT = ":edge:joy:START"
+local player1_start_BITPORT = 0x0001
+local player1_keyup_IOPORT = ":edge:joy:JOY1"
+local player1_keyup_BITPORT = 0x0002
+local player1_keydown_IOPORT = ":edge:joy:JOY1"
+local player1_keydown_BITPORT= 0x0001
+
+-- Variables pour les entrées du joueur 2 (droite)
+local player2_start_IOPORT = ":edge:joy:START"
+local player2_start_BITPORT = 0x0100
+local player2_keyup_IOPORT = ":edge:joy:JOY2"
+local player2_keyup_BITPORT = 0x0002
+local player2_keydown_IOPORT = ":edge:joy:JOY2"
+local player2_keydown_BITPORT= 0x0001
+
+  -- Variables pour l'edge detection
+  local prevKeyUp1 = true
+  local prevKeyDown1 = true
+  local prevKeyUp2 = true
+  local prevKeyDown2 = true
+
+  file:set_resolve_tags_callback(function ()
+    -- Obtenir les ports pour les entrées du joueur 1
+    local p1_start_port = file.device:ioport(player1_start_IOPORT)
+    local p1_key_port   = file.device:ioport(player1_keyup_IOPORT)
+    -- Pour le joueur 2, on utilise le même port IN0 et IN1, mais avec des bits différents
+    local p2_start_port = file.device:ioport(player2_start_IOPORT)
+    local p2_key_port   = file.device:ioport(player2_keyup_IOPORT)
+
+    file.views["InstructionsCardsView"]:set_prepare_items_callback(function ()
+      local leftCard  = file.views["InstructionsCardsView"].items["inst_left"]
+      local rightCard = file.views["InstructionsCardsView"].items["inst_right"]
+
+      local p1_start_val = p1_start_port:read()
+      local p1_key_val   = p1_key_port:read()
+      local p2_start_val = p2_start_port:read()
+      local p2_key_val   = p2_key_port:read()
+
+      -- Pour le joueur 1 (gauche)
+      local p1_start = ((p1_start_val & player1_start_BITPORT) == 0)
+      if p1_start then
+        local p1_up   = ((p1_key_val & player1_keyup_BITPORT) == 0)
+        if p1_up and not prevKeyUp1 then
+          stateLeft = (stateLeft + 1) % numStates
+          leftCard:set_state(stateLeft)
+          print("Player1: Start+Up -> new state: " .. stateLeft)
+        end
+        local p1_down = ((p1_key_val & player1_keydown_BITPORT) == 0)
+        if p1_down and not prevKeyDown1 then
+          stateLeft = (stateLeft - 1 + numStates) % numStates
+          leftCard:set_state(stateLeft)
+          print("Player1: Start+Down -> new state: " .. stateLeft)
+        end
+        prevKeyUp1 = p1_up
+        prevKeyDown1 = p1_down
+      else
+        prevKeyUp1 = true
+        prevKeyDown1 = true
+      end
+
+      -- Pour le joueur 2 (droite)
+      local p2_start = ((p2_start_val & player2_start_BITPORT) == 0)
+      if p2_start then
+        local p2_up   = ((p2_key_val & player2_keyup_BITPORT) == 0)
+        if p2_up and not prevKeyUp2 then
+          stateRight = (stateRight + 1) % numStates
+          rightCard:set_state(stateRight)
+          print("Player2: Start+Up -> new state: " .. stateRight)
+        end
+        local p2_down = ((p2_key_val & player2_keydown_BITPORT) == 0)
+        if p2_down and not prevKeyDown2 then
+          stateRight = (stateRight - 1 + numStates) % numStates
+          rightCard:set_state(stateRight)
+          print("Player2: Start+Down -> new state: " .. stateRight)
+        end
+        prevKeyUp2 = p2_up
+        prevKeyDown2 = p2_down
+      else
+        prevKeyUp2 = true
+        prevKeyDown2 = true
+      end
+    end)
+  end)
+]]></script>
+
+</mamelayout>

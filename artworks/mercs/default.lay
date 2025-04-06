@@ -1,0 +1,171 @@
+﻿<mamelayout version="2">
+
+  <!-- L'image du haut reprend les images initialement de gauche -->
+  <element name="inst_top" defstate="0">
+    <image file="Instruction Card - Items And Weapons 01 - leftCenter.png" state="0"/>
+    <image file="Instruction Card - Items And Weapons 02 - leftCenter.png" state="1"/>
+    <image file="Instruction Card - Items And Weapons 03 - leftCenter.png" state="2"/>
+    <image file="Instruction Card - Items And Weapons 04 - leftCenter.png" state="3"/>
+    <image file="Instruction Card - Items And Weapons 05 - leftCenter.png" state="4"/>
+  </element>
+
+  <!-- L'image du bas reprend les images initialement de droite -->
+  <element name="inst_bottom" defstate="0">
+    <image file="Instruction Card - Items And Weapons 01 - rightCenter.png" state="0"/>
+    <image file="Instruction Card - Items And Weapons 02 - rightCenter.png" state="1"/>
+    <image file="Instruction Card - Items And Weapons 03 - rightCenter.png" state="2"/>
+    <image file="Instruction Card - Items And Weapons 04 - rightCenter.png" state="3"/>
+    <image file="Instruction Card - Items And Weapons 05 - rightCenter.png" state="4"/>
+  </element>
+
+  <!-- Vue principale en mode portrait avec homothétie conservée pour les images :
+       - Largeur des images : 2330
+       - Hauteur calculée : 2330 * (145/768) ≈ 440
+       Le layout total reste sur 4010 pixels de hauteur :
+         • Image du haut : y=0, hauteur=440
+         • Zone centrale : y=440, hauteur=3130 (4010 - 2×440)
+         • Image du bas : y=3570, hauteur=440 -->
+  <view name="InstructionsCardsView">
+    <screen index="0">
+      <bounds x="173" y="440" width="2330" height="3130"/>
+    </screen>
+    <element id="inst_top" ref="inst_top">
+      <bounds x="173" y="0" width="2330" height="440"/>
+    </element>
+    <element id="inst_bottom" ref="inst_bottom">
+      <bounds x="173" y="3570" width="2330" height="440"/>
+    </element>
+  </view>
+
+  <!-- Vue n'affichant que le player 1 (position haute) -->
+  <view name="InstructionsCardsViewOnlyP1Top">
+    <screen index="0">
+      <bounds x="173" y="440" width="2330" height="3130"/>
+    </screen>
+    <element id="inst_top" ref="inst_top">
+      <bounds x="173" y="0" width="2330" height="440"/>
+    </element>
+  </view>
+
+  <!-- Vue n'affichant que le player 1 (position basse) -->
+  <view name="InstructionsCardsViewOnlyP1Bottom">
+    <screen index="0">
+      <bounds x="173" y="0" width="2330" height="3130"/>
+    </screen>
+    <element id="inst_top" ref="inst_top">
+      <bounds x="173" y="3130" width="2330" height="440"/>
+    </element>
+  </view>
+
+  <!-- Script commun pour mettre à jour toutes les vues -->
+  <script><![CDATA[
+  local stateTop = 0
+  local stateBottom = 0
+  local numStates = 5
+
+  -- Variables pour les entrées du joueur 1 (haut)
+  local player1_start_IOPORT = "IN0"
+  local player1_start_BITPORT = 0x10
+  local player1_keyup_IOPORT = "IN1"
+  local player1_keyup_BITPORT = 0x0008
+  local player1_keydown_IOPORT = "IN1"
+  local player1_keydown_BITPORT= 0x0004
+
+  -- Variables pour les entrées du joueur 2 (bas)
+  local player2_start_IOPORT = "IN0"
+  local player2_start_BITPORT = 0x20
+  local player2_keyup_IOPORT = "IN1"
+  local player2_keyup_BITPORT = 0x0800
+  local player2_keydown_IOPORT = "IN1"
+  local player2_keydown_BITPORT= 0x0400
+
+  -- Variables pour l'edge detection
+  local prevKeyUp1 = true
+  local prevKeyDown1 = true
+  local prevKeyUp2 = true
+  local prevKeyDown2 = true
+
+  file:set_resolve_tags_callback(function ()
+    -- Obtenir les ports d'entrée
+    local p1_start_port = file.device:ioport(player1_start_IOPORT)
+    local p1_key_port   = file.device:ioport(player1_keyup_IOPORT)
+    local p2_start_port = file.device:ioport(player2_start_IOPORT)
+    local p2_key_port   = file.device:ioport(player2_keyup_IOPORT)
+
+    -- Fonction commune de mise à jour qui lit les entrées et met à jour les états
+    local function update_views()
+      local p1_start_val = p1_start_port:read()
+      local p1_key_val   = p1_key_port:read()
+      local p2_start_val = p2_start_port:read()
+      local p2_key_val   = p2_key_port:read()
+
+      -- Mise à jour pour le joueur 1 (haut)
+      local p1_start = ((p1_start_val & player1_start_BITPORT) == 0)
+      if p1_start then
+        local p1_up   = ((p1_key_val & player1_keyup_BITPORT) == 0)
+        if p1_up and not prevKeyUp1 then
+          stateTop = (stateTop + 1) % numStates
+          print("Player1: Start+Up -> new state: " .. stateTop)
+        end
+        local p1_down = ((p1_key_val & player1_keydown_BITPORT) == 0)
+        if p1_down and not prevKeyDown1 then
+          stateTop = (stateTop - 1 + numStates) % numStates
+          print("Player1: Start+Down -> new state: " .. stateTop)
+        end
+        prevKeyUp1 = p1_up
+        prevKeyDown1 = p1_down
+      else
+        prevKeyUp1 = true
+        prevKeyDown1 = true
+      end
+
+      -- Mise à jour pour le joueur 2 (bas)
+      local p2_start = ((p2_start_val & player2_start_BITPORT) == 0)
+      if p2_start then
+        local p2_up   = ((p2_key_val & player2_keyup_BITPORT) == 0)
+        if p2_up and not prevKeyUp2 then
+          stateBottom = (stateBottom + 1) % numStates
+          print("Player2: Start+Up -> new state: " .. stateBottom)
+        end
+        local p2_down = ((p2_key_val & player2_keydown_BITPORT) == 0)
+        if p2_down and not prevKeyDown2 then
+          stateBottom = (stateBottom - 1 + numStates) % numStates
+          print("Player2: Start+Down -> new state: " .. stateBottom)
+        end
+        prevKeyUp2 = p2_up
+        prevKeyDown2 = p2_down
+      else
+        prevKeyUp2 = true
+        prevKeyDown2 = true
+      end
+
+      -- Mise à jour de toutes les vues
+      local viewNames = {
+        "InstructionsCardsView",
+        "InstructionsCardsViewOnlyP1Top",
+        "InstructionsCardsViewOnlyP1Bottom"
+      }
+      for _, viewName in ipairs(viewNames) do
+        local v = file.views[viewName]
+        if v.items["inst_top"] then
+          v.items["inst_top"]:set_state(stateTop)
+        end
+        if v.items["inst_bottom"] then
+          v.items["inst_bottom"]:set_state(stateBottom)
+        end
+      end
+    end
+
+    -- Affecter la fonction de mise à jour à chacune des vues
+    local viewNames = {
+      "InstructionsCardsView",
+      "InstructionsCardsViewOnlyP1Top",
+      "InstructionsCardsViewOnlyP1Bottom"
+    }
+    for _, viewName in ipairs(viewNames) do
+      file.views[viewName]:set_prepare_items_callback(update_views)
+    end
+  end)
+]]></script>
+
+</mamelayout>

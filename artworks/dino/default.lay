@@ -55,7 +55,7 @@
 
 -- Variables pour les entrées du joueur 1 (gauche)
 local player1_start_IOPORT = "IN0"
-local player1_start_BITPORT = 0x010
+local player1_start_BITPORT = 0x10
 local player1_keyup_IOPORT = "IN1"
 local player1_keyup_BITPORT = 0x0008
 local player1_keydown_IOPORT = "IN1"
@@ -63,7 +63,7 @@ local player1_keydown_BITPORT= 0x0004
 
 -- Variables pour les entrées du joueur 2 (droite)
 local player2_start_IOPORT = "IN0"
-local player2_start_BITPORT = 0x020
+local player2_start_BITPORT = 0x20
 local player2_keyup_IOPORT = "IN1"
 local player2_keyup_BITPORT = 0x0800
 local player2_keydown_IOPORT = "IN1"
