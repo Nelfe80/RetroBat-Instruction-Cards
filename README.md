@@ -23,10 +23,10 @@ The layout script uses input port values and bit masks defined as variables and 
 ## Installation
 
 1. **Copy the Artwork Folder:**  
-   Place the entire folder containing the layout and its images into the following directory in RetroBat:  
-saves/mame/artwork/
+   Place the entire folder containing the layout of the game and its images into the following directory in RetroBat:  
+saves/mame/artwork/ \<RomNameWithoutExtension\> /
 
-   Or directly in the folder /mame/artwork/ (if you don't have RetroBat)
+   Or directly in the folder /mame/artwork/ \<RomNameWithoutExtension\> / (if you don't have RetroBat)
 
 2. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
