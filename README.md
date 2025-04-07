@@ -28,7 +28,9 @@ saves/mame/artwork/
 
    Or directly in the folder /mame/artwork/ (if you don't have RetroBat)
 
-3. Update your MAME and Roms
+3. **Configure Mame:**
+- Make sure **layout                    1** is in the file "plugin.ini" in the Mame emulator folder. (We need LUA scripts to be supported in Mames Layout thanks to the mame “layout” plugin.)
+- Update your MAME and roms if necessary
 
 4. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
