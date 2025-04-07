@@ -26,14 +26,16 @@ The layout script uses input port values and bit masks defined as variables and 
    Place the entire folder containing the layout and its images into the following directory in RetroBat:  
 saves/mame/artwork/
 
-2. **Configure RetroBat:**  
+2. Update your MAME and Roms
+
+3. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
 - In the advanced options for the system or game, under **Visual Rendering**, set **Disable Artwork** to **No**.
 
-3. **Select the View:**  
+4. **Select the View:**  
 In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
 
-4. **Check Inputs:**  
+5. **Check Inputs:**  
 Check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start and Up and Down buttons)
 
 ## Usage
