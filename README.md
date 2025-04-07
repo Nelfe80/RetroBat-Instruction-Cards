@@ -28,22 +28,22 @@ saves/mame/artwork/
 
    Or directly in the folder /mame/artwork/ (if you don't have RetroBat)
 
-3. **Configure Mame:**
-- In RetroBat, Make sure "**layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1**" is in the file "plugin.ini" in /bios/mame/ini/plugin.ini (the plugin seems to be activated by default, but if you observe a problem, it's a good idea to check this out)
-- Else without RetroBat, make sure "**layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1**" is in the file "plugin.ini" in the Mame emulator folder.
-
-==> We need LUA scripts to be supported in Mames Layout thanks to the mame “layout” plugin.
-- Update your MAME and roms if necessary
-
-4. **Configure RetroBat:**  
+2. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
 - In the advanced options for the system or game, under **Visual Rendering**, set **Disable Artwork** to **No**.
+- If you observe a problem in RetroBat, make sure "**layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1**" is in the file "plugin.ini" in /bios/mame/ini/plugin.ini (the plugin seems to be activated by default, but it's a good idea to check this out) ==> We need LUA scripts to be supported in Mames Layout thanks to the mame “layout” plugin.
+
+3. **Configure Mame:**
+
+- If you don't use RetroBat, make sure "**layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1**" is in the file "plugin.ini" in the Mame emulator folder.
+==> We need LUA scripts to be supported in Mames Layout thanks to the mame “layout” plugin.
+- If you observe a problem, update your MAME and roms if necessary
 
 4. **Select the View:**  
-In RetroBat, launch MAME (typically Mame64) and select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
+- Launch your game with Mame64. In MAME select the view named `InstructionsCardsView` with [TAB] > Video Options > Screen #0.
 
 5. **Check Inputs:**  
-Check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start and Up and Down buttons)
+- If you observe a problem, check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start and Up and Down buttons)
 
 ## Usage
 
