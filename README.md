@@ -25,11 +25,12 @@ The layout script uses input port values and bit masks defined as variables and 
 1. **Copy the Artwork Folder:**  
    Place the entire folder containing the layout and its images into the following directory in RetroBat:  
 saves/mame/artwork/
+
    Or directly in the foler /mame/artwork/ (if you don't have RetroBat)
 
-2. Update your MAME and Roms
+3. Update your MAME and Roms
 
-3. **Configure RetroBat:**  
+4. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
 - In the advanced options for the system or game, under **Visual Rendering**, set **Disable Artwork** to **No**.
 
