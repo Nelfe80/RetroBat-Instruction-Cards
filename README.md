@@ -45,6 +45,8 @@ saves/mame/artwork/
 5. **Check Inputs:**  
 - If you observe a problem, check inputs in Mame during game (Tab key -> Inputs Settings -> Input Assignements (this system) -> 1 Player Start and Up and Down buttons)
 
+<img src="https://github.com/Nelfe80/RetroBat-Instruction-Cards/blob/master/_img/check.png"/>
+
 ## Usage
 
 - **Player 1 (Left Side):**  
