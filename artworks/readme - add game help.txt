@@ -5,6 +5,42 @@ This will identify the system and its available inputs, such as "SERVICE", "IN0"
 Next, here's a list of inputs for the most commonly used systems, but you should be aware that you may need to consult the Mame core sources to adjust certain parameters specific to certain games.
 If you have an alternative rom version to the one shown here, simply rename the zip file or folder in artwork to make them work.
 
+MIDWAY : MK, MK2
+https://github.com/mamedev/mame/blob/master/src/mame/midway/midtunit.cpp
+  -- Variables pour les entrées du joueur 1 (gauche)
+  local player1_start_IOPORT = "IN1"
+  local player1_start_BITPORT = 0x0004
+  local player1_keyup_IOPORT   = "IN0"
+  local player1_keyup_BITPORT  = 0x0001
+  local player1_keydown_IOPORT = "IN0"
+  local player1_keydown_BITPORT= 0x0002
+
+  -- Variables pour les entrées du joueur 2 (droite)
+  local player2_start_IOPORT = "IN1"
+  local player2_start_BITPORT = 0x0020
+  local player2_keyup_IOPORT   = "IN0"
+  local player2_keyup_BITPORT  = 0x0100
+  local player2_keydown_IOPORT = "IN0"
+  local player2_keydown_BITPORT= 0x0200
+
+MIDWAY : UMK3
+https://github.com/mamedev/mame/blob/master/src/mame/midway/midwunit.cpp
+  -- Variables pour les entrées du joueur 1 (gauche)
+  local player1_start_IOPORT = "IN2"
+  local player1_start_BITPORT = 0x0004
+  local player1_keyup_IOPORT   = "IN0"
+  local player1_keyup_BITPORT  = 0x0001
+  local player1_keydown_IOPORT = "IN0"
+  local player1_keydown_BITPORT= 0x0002
+
+  -- Variables pour les entrées du joueur 2 (droite)
+  local player2_start_IOPORT = "IN2"
+  local player2_start_BITPORT = 0x0020
+  local player2_keyup_IOPORT   = "IN0"
+  local player2_keyup_BITPORT  = 0x0100
+  local player2_keydown_IOPORT = "IN0"
+  local player2_keydown_BITPORT= 0x0200
+
 SYSTEM16 : Altered Beast, Golden Axe
 https://github.com/mamedev/mame/blob/master/src/mame/sega/system16.cpp
 
