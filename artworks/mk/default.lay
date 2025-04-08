@@ -38,7 +38,7 @@
   local numStates = 7
 
   -- Variables pour les entrées du joueur 1 (gauche)
-  local player1_start_IOPORT = "IN2"
+  local player1_start_IOPORT = "IN1"
   local player1_start_BITPORT = 0x0004
   local player1_keyup_IOPORT   = "IN0"
   local player1_keyup_BITPORT  = 0x0001
@@ -46,7 +46,7 @@
   local player1_keydown_BITPORT= 0x0002
 
   -- Variables pour les entrées du joueur 2 (droite)
-  local player2_start_IOPORT = "IN2"
+  local player2_start_IOPORT = "IN1"
   local player2_start_BITPORT = 0x0020
   local player2_keyup_IOPORT   = "IN0"
   local player2_keyup_BITPORT  = 0x0100
