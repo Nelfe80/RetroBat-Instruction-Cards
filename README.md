@@ -31,6 +31,7 @@ saves/mame/artwork/ \<RomNameWithoutExtension\> /
 2. **Configure RetroBat:**  
 - Make sure **Mame64** is selected in RetroBat.
 - In the advanced options for the system or game, under **Visual Rendering**, set **Disable Artwork** to **No**.
+- Do **not select a bezel**.
 - If you observe a problem in RetroBat, make sure "**layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1**" is in the file "plugin.ini" in /bios/mame/ini/plugin.ini (the plugin seems to be activated by default, but it's a good idea to check this out) ==> We need LUA scripts to be supported in Mames Layout thanks to the mame “layout” plugin.
 
 3. **Configure Mame:**
