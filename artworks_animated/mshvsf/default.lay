@@ -1,0 +1,336 @@
+﻿<?xml version="1.0"?>
+<mamelayout version="2">
+
+  <param name="game" value="mshvsf" /> 
+  <!-- Element de fond en bezel -->
+  <element name="bg" defstate="0">
+    <image file="../../../../roms/mame/images/mshvsf-fanart.jpg" state="0"/>
+  </element>
+
+  <element name="inst_left" defstate="0">
+    <image file="Instruction Card - Akuma 01 - leftCenter.png" state="0"/>
+    <image file="Instruction Card - Akuma 02 - leftCenter.png" state="1"/>
+    <image file="Instruction Card - Armored Spider Man 01 - leftCenter.png" state="2"/>
+    <image file="Instruction Card - Armored Spider Man 02 - leftCenter.png" state="3"/>
+    <image file="Instruction Card - Blackheart 01 - leftCenter.png" state="4"/>
+    <image file="Instruction Card - Blackheart 02 - leftCenter.png" state="5"/>
+    <image file="Instruction Card - Captain America 01 - leftCenter.png" state="6"/>
+    <image file="Instruction Card - Captain America 02 - leftCenter.png" state="7"/>
+    <image file="Instruction Card - Chun Li 01 - leftCenter.png" state="8"/>
+    <image file="Instruction Card - Chun Li 02 - leftCenter.png" state="9"/>
+    <image file="Instruction Card - Cyber Akuma 01 - leftCenter.png" state="10"/>
+    <image file="Instruction Card - Cyber Akuma 02 - leftCenter.png" state="11"/>
+    <image file="Instruction Card - Cyber Akuma 03 - leftCenter.png" state="12"/>
+    <image file="Instruction Card - Cyclops 01 - leftCenter.png" state="13"/>
+    <image file="Instruction Card - Cyclops 02 - leftCenter.png" state="14"/>
+    <image file="Instruction Card - Dan 01 - leftCenter.png" state="15"/>
+    <image file="Instruction Card - Dan 02 - leftCenter.png" state="16"/>
+    <image file="Instruction Card - Dhalsim 01 - leftCenter.png" state="17"/>
+    <image file="Instruction Card - Dhalsim 02 - leftCenter.png" state="18"/>
+    <image file="Instruction Card - Evil Sakura 01 - leftCenter.png" state="19"/>
+    <image file="Instruction Card - Evil Sakura 02 - leftCenter.png" state="20"/>
+    <image file="Instruction Card - Evil Sakura 03 - leftCenter.png" state="21"/>
+    <image file="Instruction Card - Hulk 01 - leftCenter.png" state="22"/>
+    <image file="Instruction Card - Ken 01 - leftCenter.png" state="23"/>
+    <image file="Instruction Card - Ken 02 - leftCenter.png" state="24"/>
+    <image file="Instruction Card - M Bison 01 - leftCenter.png" state="25"/>
+    <image file="Instruction Card - M Bison 02 - leftCenter.png" state="26"/>
+    <image file="Instruction Card - Mech Zangief 01 - leftCenter.png" state="27"/>
+    <image file="Instruction Card - Mech Zangief 02 - leftCenter.png" state="28"/>
+    <image file="Instruction Card - Mech Zangief 03 - leftCenter.png" state="29"/>
+    <image file="Instruction Card - Mech Zangief 04 - leftCenter.png" state="30"/>
+    <image file="Instruction Card - Mephisto 01 - leftCenter.png" state="31"/>
+    <image file="Instruction Card - Mephisto 02 - leftCenter.png" state="32"/>
+    <image file="Instruction Card - Mephisto 03 - leftCenter.png" state="33"/>
+    <image file="Instruction Card - Norimaro 01 - leftCenter.png" state="34"/>
+    <image file="Instruction Card - Norimaro 02 - leftCenter.png" state="35"/>
+    <image file="Instruction Card - Ryu 01 - leftCenter.png" state="36"/>
+    <image file="Instruction Card - Ryu 02 - leftCenter.png" state="37"/>
+    <image file="Instruction Card - Sakura 01 - leftCenter.png" state="38"/>
+    <image file="Instruction Card - Shadow 01 - leftCenter.png" state="39"/>
+    <image file="Instruction Card - Shadow 02 - leftCenter.png" state="40"/>
+    <image file="Instruction Card - Shadow 03 - leftCenter.png" state="41"/>
+    <image file="Instruction Card - Shuma Gorath 01 - leftCenter.png" state="42"/>
+    <image file="Instruction Card - Spider Man 01 - leftCenter.png" state="43"/>
+    <image file="Instruction Card - US Agent 01 - leftCenter.png" state="44"/>
+    <image file="Instruction Card - US Agent 02 - leftCenter.png" state="45"/>
+    <image file="Instruction Card - US Agent 03 - leftCenter.png" state="46"/>
+    <image file="Instruction Card - Wolverine 01 - leftCenter.png" state="47"/>
+    <image file="Instruction Card - Wolverine 02 - leftCenter.png" state="48"/>
+    <image file="Instruction Card - Zangief 01 - leftCenter.png" state="49"/>
+    <image file="Instruction Card - Zangief 02 - leftCenter.png" state="50"/>
+    <image file="Instruction Card - Zangief 03 - leftCenter.png" state="51"/>
+  
+    <image file="empty.png" state="999"/>
+</element>
+
+
+  <element name="inst_right" defstate="0">
+    <image file="Instruction Card - Akuma 01 - rightCenter.png" state="0"/>
+    <image file="Instruction Card - Akuma 02 - rightCenter.png" state="1"/>
+    <image file="Instruction Card - Armored Spider Man 01 - rightCenter.png" state="2"/>
+    <image file="Instruction Card - Armored Spider Man 02 - rightCenter.png" state="3"/>
+    <image file="Instruction Card - Blackheart 01 - rightCenter.png" state="4"/>
+    <image file="Instruction Card - Blackheart 02 - rightCenter.png" state="5"/>
+    <image file="Instruction Card - Captain America 01 - rightCenter.png" state="6"/>
+    <image file="Instruction Card - Captain America 02 - rightCenter.png" state="7"/>
+    <image file="Instruction Card - Chun Li 01 - rightCenter.png" state="8"/>
+    <image file="Instruction Card - Chun Li 02 - rightCenter.png" state="9"/>
+    <image file="Instruction Card - Cyber Akuma 01 - rightCenter.png" state="10"/>
+    <image file="Instruction Card - Cyber Akuma 02 - rightCenter.png" state="11"/>
+    <image file="Instruction Card - Cyber Akuma 03 - rightCenter.png" state="12"/>
+    <image file="Instruction Card - Cyclops 01 - rightCenter.png" state="13"/>
+    <image file="Instruction Card - Cyclops 02 - rightCenter.png" state="14"/>
+    <image file="Instruction Card - Dan 01 - rightCenter.png" state="15"/>
+    <image file="Instruction Card - Dan 02 - rightCenter.png" state="16"/>
+    <image file="Instruction Card - Dhalsim 01 - rightCenter.png" state="17"/>
+    <image file="Instruction Card - Dhalsim 02 - rightCenter.png" state="18"/>
+    <image file="Instruction Card - Evil Sakura 01 - rightCenter.png" state="19"/>
+    <image file="Instruction Card - Evil Sakura 02 - rightCenter.png" state="20"/>
+    <image file="Instruction Card - Evil Sakura 03 - rightCenter.png" state="21"/>
+    <image file="Instruction Card - Hulk 01 - rightCenter.png" state="22"/>
+    <image file="Instruction Card - Ken 01 - rightCenter.png" state="23"/>
+    <image file="Instruction Card - Ken 02 - rightCenter.png" state="24"/>
+    <image file="Instruction Card - M Bison 01 - rightCenter.png" state="25"/>
+    <image file="Instruction Card - M Bison 02 - rightCenter.png" state="26"/>
+    <image file="Instruction Card - Mech Zangief 01 - rightCenter.png" state="27"/>
+    <image file="Instruction Card - Mech Zangief 02 - rightCenter.png" state="28"/>
+    <image file="Instruction Card - Mech Zangief 03 - rightCenter.png" state="29"/>
+    <image file="Instruction Card - Mech Zangief 04 - rightCenter.png" state="30"/>
+    <image file="Instruction Card - Mephisto 01 - rightCenter.png" state="31"/>
+    <image file="Instruction Card - Mephisto 02 - rightCenter.png" state="32"/>
+    <image file="Instruction Card - Mephisto 03 - rightCenter.png" state="33"/>
+    <image file="Instruction Card - Norimaro 01 - rightCenter.png" state="34"/>
+    <image file="Instruction Card - Norimaro 02 - rightCenter.png" state="35"/>
+    <image file="Instruction Card - Ryu 01 - rightCenter.png" state="36"/>
+    <image file="Instruction Card - Ryu 02 - rightCenter.png" state="37"/>
+    <image file="Instruction Card - Sakura 01 - rightCenter.png" state="38"/>
+    <image file="Instruction Card - Shadow 01 - rightCenter.png" state="39"/>
+    <image file="Instruction Card - Shadow 02 - rightCenter.png" state="40"/>
+    <image file="Instruction Card - Shadow 03 - rightCenter.png" state="41"/>
+    <image file="Instruction Card - Shuma Gorath 01 - rightCenter.png" state="42"/>
+    <image file="Instruction Card - Spider Man 01 - rightCenter.png" state="43"/>
+    <image file="Instruction Card - US Agent 01 - rightCenter.png" state="44"/>
+    <image file="Instruction Card - US Agent 02 - rightCenter.png" state="45"/>
+    <image file="Instruction Card - US Agent 03 - rightCenter.png" state="46"/>
+    <image file="Instruction Card - Wolverine 01 - rightCenter.png" state="47"/>
+    <image file="Instruction Card - Wolverine 02 - rightCenter.png" state="48"/>
+    <image file="Instruction Card - Zangief 01 - rightCenter.png" state="49"/>
+    <image file="Instruction Card - Zangief 02 - rightCenter.png" state="50"/>
+    <image file="Instruction Card - Zangief 03 - rightCenter.png" state="51"/>
+  
+    <image file="empty.png" state="999"/>
+</element>
+
+
+    <view name="InstructionsCardsView">
+    <element id="background" ref="bg" state="0">
+      <bounds x="0" y="347" width="4011" height="2328"/>
+    </element>
+	
+    <screen index="0">
+      <bounds x="510" y="347" width="2990" height="2330"/>
+    </screen>
+
+    <!-- Animation pour la carte de gauche (ancrage à gauche) -->
+    <repeat count="9">
+      <param name="w" start="0" increment="63.75"/>
+      <param name="alpha" start="0.1" increment="0.1"/>
+      <element id="animate_left_~w~" ref="inst_left" state="999">
+        <bounds x="0" y="347" width="~w~" height="2330"/>
+        <color alpha="~alpha~"/>
+      </element>
+    </repeat>
+    <!-- Element final pour la carte de gauche -->
+    <element id="inst_left_final" ref="inst_left" state="999">
+      <bounds x="0" y="347" width="510" height="2330"/>
+    </element>
+
+    <!-- Animation pour la carte de droite (ancrage à droite) -->
+    <repeat count="9">
+      <param name="w" start="0" increment="63.75"/>
+      <param name="alpha" start="0.1" increment="0.1"/>
+      <!-- La coordonnee x est calculee pour que le bord droit reste fixe à 4010 -->
+      <param name="rx" start="4010" increment="-63.75"/>
+      <element id="animate_right_~w~" ref="inst_right" state="999">
+        <bounds x="~rx~" y="347" width="~w~" height="2330"/>
+        <color alpha="~alpha~"/>
+      </element>
+    </repeat>
+    <!-- Element final pour la carte droite -->
+    <element id="inst_right_final" ref="inst_right" state="999">
+      <bounds x="3500" y="347" width="510" height="2330"/>
+    </element>
+  </view>
+
+<script><![CDATA[
+    local numStates = 52
+
+    -- Variables pour les entrees du joueur 1 (gauche)
+    local player1_start_IOPORT = "IN2"
+    local player1_start_BITPORT = 0x0100
+    local player1_keyup_IOPORT   = "IN0"
+    local player1_keyup_BITPORT  = 0x0008
+    local player1_keydown_IOPORT = "IN0"
+    local player1_keydown_BITPORT= 0x0004
+
+    -- Variables pour les entrees du joueur 2 (droite)
+    local player2_start_IOPORT = "IN2"
+    local player2_start_BITPORT = 0x0200
+    local player2_keyup_IOPORT   = "IN0"
+    local player2_keyup_BITPORT  = 0x0800
+    local player2_keydown_IOPORT = "IN0"
+    local player2_keydown_BITPORT= 0x0400
+
+    -- Declaration des frames d'animation basees sur la valeur de largeur (w)
+    local animFrames = { "0", "63.75", "127.5", "191.25", "255", "318.75", "382.5", "446.25", "510" }
+    local leftAnimIndex = 1
+    local rightAnimIndex = 1
+    local tempoFrames = 1  -- Valeur d'acceleration (modifiable)
+    local leftFrameTimer = 0
+    local rightFrameTimer = 0
+    local leftAnimationFinished = true
+    local rightAnimationFinished = true
+    local leftAnimReinit = false
+    local rightAnimReinit = false
+    local stateLeft = 0
+    local stateRight = 0
+
+    local function setItemState(view, id, newState)
+      if view.items[id] then
+        view.items[id]:set_state(newState)
+      end
+    end
+
+    local prevKeyUp1, prevKeyDown1 = true, true
+    local prevKeyUp2, prevKeyDown2 = true, true
+
+    file:set_resolve_tags_callback(function()
+      local view = file.views["InstructionsCardsView"]
+      local leftFinal = view.items["inst_left_final"]
+      local rightFinal = view.items["inst_right_final"]
+
+      leftFinal:set_state(stateLeft)
+      rightFinal:set_state(stateRight)
+
+      view:set_prepare_items_callback(function()
+        -- Gestion des entrees joueur 1 (gauche)
+        local p1_start_val = file.device:ioport(player1_start_IOPORT):read()
+        local p1_key_val = file.device:ioport(player1_keyup_IOPORT):read()
+        if ((p1_start_val & player1_start_BITPORT) == 0) then
+          local p1_up = ((p1_key_val & player1_keyup_BITPORT) == 0)
+          if p1_up and not prevKeyUp1 then
+            stateLeft = (stateLeft + 1) % numStates
+            leftAnimReinit = true
+            print("Left: new state " .. stateLeft)
+          end
+          local p1_down = ((p1_key_val & player1_keydown_BITPORT) == 0)
+          if p1_down and not prevKeyDown1 then
+            stateLeft = (stateLeft - 1 + numStates) % numStates
+            leftAnimReinit = true
+            print("Left: new state " .. stateLeft)
+          end
+          prevKeyUp1 = p1_up
+          prevKeyDown1 = p1_down
+        else
+          prevKeyUp1 = true
+          prevKeyDown1 = true
+        end
+
+        -- Gestion des entrees joueur 2 (droite)
+        local p2_start_val = file.device:ioport(player2_start_IOPORT):read()
+        local p2_key_val = file.device:ioport(player2_keyup_IOPORT):read()
+        if ((p2_start_val & player2_start_BITPORT) == 0) then
+          local p2_up = ((p2_key_val & player2_keyup_BITPORT) == 0)
+          if p2_up and not prevKeyUp2 then
+            stateRight = (stateRight + 1) % numStates
+            rightAnimReinit = true
+            print("Right: new state " .. stateRight)
+          end
+          local p2_down = ((p2_key_val & player2_keydown_BITPORT) == 0)
+          if p2_down and not prevKeyDown2 then
+            stateRight = (stateRight - 1 + numStates) % numStates
+            rightAnimReinit = true
+            print("Right: new state " .. stateRight)
+          end
+          prevKeyUp2 = p2_up
+          prevKeyDown2 = p2_down
+        else
+          prevKeyUp2 = true
+          prevKeyDown2 = true
+        end
+
+        -- Reinitialisation de l'animation pour la carte gauche
+        if leftAnimReinit then
+          leftFinal:set_state(999)
+          for i = 1, #animFrames do
+            local id = "animate_left_" .. animFrames[i]
+            setItemState(view, id, 999)
+          end
+          leftAnimIndex = 1
+          leftFrameTimer = 0
+          leftAnimationFinished = false
+          local firstID = "animate_left_" .. animFrames[leftAnimIndex]
+          setItemState(view, firstID, stateLeft)
+          leftAnimReinit = false
+        end
+
+        -- Reinitialisation pour la carte droite
+        if rightAnimReinit then
+          rightFinal:set_state(999)
+          for i = 1, #animFrames do
+            local id = "animate_right_" .. animFrames[i]
+            setItemState(view, id, 999)
+          end
+          rightAnimIndex = 1
+          rightFrameTimer = 0
+          rightAnimationFinished = false
+          local firstID = "animate_right_" .. animFrames[rightAnimIndex]
+          setItemState(view, firstID, stateRight)
+          rightAnimReinit = false
+        end
+
+        -- Animation progressive côte gauche
+        if not leftAnimationFinished then
+          leftFrameTimer = leftFrameTimer + 1
+          if leftFrameTimer >= tempoFrames then
+            leftFrameTimer = 0
+            local curID = "animate_left_" .. animFrames[leftAnimIndex]
+            setItemState(view, curID, 999)
+            leftAnimIndex = leftAnimIndex + 1
+            if leftAnimIndex <= #animFrames then
+              local nextID = "animate_left_" .. animFrames[leftAnimIndex]
+              setItemState(view, nextID, stateLeft)
+            else
+              leftAnimationFinished = true
+              leftFinal:set_state(stateLeft)
+            end
+          end
+        end
+
+        -- Animation progressive côte droit
+        if not rightAnimationFinished then
+          rightFrameTimer = rightFrameTimer + 1
+          if rightFrameTimer >= tempoFrames then
+            rightFrameTimer = 0
+            local curID = "animate_right_" .. animFrames[rightAnimIndex]
+            setItemState(view, curID, 999)
+            rightAnimIndex = rightAnimIndex + 1
+            if rightAnimIndex <= #animFrames then
+              local nextID = "animate_right_" .. animFrames[rightAnimIndex]
+              setItemState(view, nextID, stateRight)
+            else
+              rightAnimationFinished = true
+              rightFinal:set_state(stateRight)
+            end
+          end
+        end
+
+      end)
+    end)
+]]></script>
+
+</mamelayout>
+
+
+
