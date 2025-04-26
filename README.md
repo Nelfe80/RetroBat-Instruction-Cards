@@ -69,6 +69,9 @@ When Player 2 holds Start and presses Up or Down, the right instruction card cyc
 RetroBat-Instruction-Cards is a Mame-integrated solution that uses only Mame's Layout plugin and exploits the inputs of the various emulated systems to access the Start, Up and Down keys. 
 This solution does not depend on external development or enhanced software. It can therefore be easily used in all systems running Mame.
 
+You may run into problems and start or up or down may not react the way you want.
+If you've made configurations before, you may have cached files with your old configuration. It's already happened. Look for the name of the rom in your retrobat folder and delete the cache (zip or others, but not scrap images and your rom 😉) and .lay files except those in saves/mame/artwork.
+
 Instructions cards from Marlon Lopez :
 https://www.mmg1designs.com/instruction-cards-for-hyperlaunch-with-moves-list-for-various-street-fighter-games/
 Thanks !
